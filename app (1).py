@@ -6,13 +6,9 @@ from PIL import Image
 
 @st.cache_resource
 def load_model():
-     return tf.keras.models.load_model(
-    "mobilenetv2_model.keras"
-)
-    )
+    return tf.keras.models.load_model("mobilenetv2_model.keras")
 
 model = load_model()
-
 st.title("Glaucoma Detection")
 st.write("Upload a retinal fundus image for model prediction.")
 
