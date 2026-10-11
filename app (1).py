@@ -6,8 +6,9 @@ from PIL import Image
 
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model(
-        "/content/drive/MyDrive/Glaucoma_Project/mobilenetv2_model.keras"
+     return tf.keras.models.load_model(
+    "mobilenetv2_model.keras"
+)
     )
 
 model = load_model()
